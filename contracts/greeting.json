@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mentes.dev/contracts/greeting.json",
+  "title": "GreetingResponse",
+  "description": "Public HTTP response body of GET /v1/greet, returned by mentes-api and parsed by mentes-cli and the desktop app. BREAKING: the field formerly named `msg` is now `message`.",
+  "type": "object",
+  "properties": {
+    "message": {
+      "description": "The greeting text. Renamed from `msg`.",
+      "type": "string"
+    }
+  },
+  "required": ["message"],
+  "additionalProperties": false
+}
